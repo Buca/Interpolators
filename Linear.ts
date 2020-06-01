@@ -22,7 +22,7 @@ export class Linear {
 		x0 : f32, y0 : f32,
 		x1 : f32, y1 : f32
     
-    ) {
+	) {
 
 		this.vertices = new Float32Array( 4 );
 		this.coefficients = new Float32Array( 2 );
