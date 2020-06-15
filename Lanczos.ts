@@ -48,7 +48,7 @@ export class Lanczos {
 		return new Lanczos( x0, y0, x1, y1 );
 
 	};
-
+	
 	public solve(): Lanczos {
 
 		let x0: f32 = this.vertices[ 1 - this.axis ],
