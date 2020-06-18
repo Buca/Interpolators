@@ -18,7 +18,7 @@ export class BiIDW{
 
 	};
 
-	public get( x: f32 ): f32 {
+	public get( x: f32, y: f32 ): f32 {
 
 		let numerator: f32 = 0,
 			denominator: f32 = 0;
