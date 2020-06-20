@@ -23,7 +23,7 @@ export class TriIDW {
 		let numerator: f32 = 0,
 			denominator: f32 = 0;
 
-		for( let i: u32 = 0; i !== this.vertices.length; i += 3 ) {
+		for( let i: u32 = 0; i !== this.vertices.length; i += 4 ) {
 
 			if( x === this.vertices[ i ] && 
 				y === this.vertices[ i + 1 ] &&

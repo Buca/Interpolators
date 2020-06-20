@@ -1,4 +1,4 @@
-export class BiIDW{
+export class BiIDW {
 
 	public vertices: Float32Array;
 	public coefficients: Float32Array;

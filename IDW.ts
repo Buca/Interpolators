@@ -25,16 +25,16 @@ export class IDW {
 
 		for( let i: u32 = 0; i !== this.vertices.length; i += 2 ) {
 
-			if( x === this.vertices[ i ] ) return this.vertices[ i + 1];
+			if( x === this.vertices[ i ] ) return this.vertices[ i + 1 ];
 
 			let distance: f32 = Mathf.pow(
 
 				Mathf.abs( this.vertices[ i ] - x ), 
-				-1 / this.exponent 
+				-1 / this.exponent
 
 			);
 			
-			numerator += distance * this.vertices[ i + 2 ];
+			numerator += distance * this.vertices[ i + 1 ];
 			denominator += distance;
 
 		}
