@@ -17,7 +17,7 @@ export class BiGussianRDF {
 
 	};
 
-	public solve(): GussianRDF {
+	public solve(): BiGussianRDF {
 
 		return this;
 
