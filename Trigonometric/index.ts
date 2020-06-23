@@ -1,0 +1,1 @@
+export { QuadraticTrig } from "../Trigonometric/QuadraticTrig";
