@@ -3,11 +3,8 @@ export class MultiIDW {
 	public vertices: Float32Array;
 	public dimension: u32;
 	public power: f32 = 1;
-	private _axis: u32;
 
-	//public indices: Float32Array;
-
-	constructor( vertices: Float32Array, dimension: u32 ) {
+	constructor( dimension: u32, vertices: Float32Array ) {
 
 		this.vertices = vertices;
 		this.dimension = dimension;
@@ -20,7 +17,7 @@ export class MultiIDW {
 
 	};
 
-	public get( v: Float32Array ) {
+	public get( v: Float32Array ): f32 {
 
 		let numerator:f32 = 0,
 			denominator:f32 = 0;
@@ -37,7 +34,7 @@ export class MultiIDW {
 
 			if( distance === 0 ) return this.vertices[ i + this.dimension ];
 
-			distance = Mathf.pow( distance, - 1 / ( 2 * power ) );
+			distance = Mathf.pow( distance, - 1 / ( 2 * this.power ) );
 			
 			numerator += distance * this.vertices[ i + v.length ];
 			denominator += distance;
